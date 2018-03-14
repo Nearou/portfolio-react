@@ -6,70 +6,94 @@ $ionicons-version: "3.0.0-alpha.3" !default;
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 @import "../node_modules/react-bootstrap-table/dist/react-bootstrap-table-all.min";
 @import "nojs-menus.scss";
+@import "layout.scss";
 
-.lead {
-  font-size: 1.4em;
-}
 
-pre {
-  background-color: #333;
-  border-color: #333;
-  color: #eee;
-  padding: 10px 20px;
-  border-radius: 5px;
-}
+.page{
+  display: flex;
+  position: absolute;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.5);
+  height: 100vh;
+  video{
+    position: absolute;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: -1;
+    height: 100vh;
 
-.navbar,
-.navbar .btn,
-.navbar .dropdown-item,
-.navbar button {
-  font-size: 18px;
-}
-
-.navbar {
-  border-bottom: 1px solid #ddd;
-}
-
-@media (max-width: 768px) {
-  .display-2 {
-    font-size: 3em;
-  }
-  .display-3 {
-    font-size: 2.5em;
-  }
-  .display-4 {
-    font-size: 2em;
   }
 }
+.figure{
+  z-index: 999999;
+  display: flex;
+  position: absolute;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
 
-/**
- * This is a fix for Reactstrap 5.0.0-alpha.4 not displaying menus in the 
- * navbar correcrtly on mobile devices.
- **/
-.navbar .dropdown {
-  display: block;
-}
-
-@media (max-width: 768px) {
-  .navbar .dropdown-menu {
-    position: relative !important;
-    display: block !important;
-    transform: none !important;
-    padding: 0 0 10px 0;
-    border: none;
+  .contenu{
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    .row1{
+      display: flex;
+      width:100%;
+    .text{
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      color: white;
+          font-size: 32pt;
+    line-height: 36pt;
+    text-align: center;
+      .name{
+       display:flex;
+  
+      color: #E31B6D;
+      }
+    }
   }
-}
+    .row2{
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      margin-bottom: 20px;
+      .text{
+        justify-content: center;
+        display: flex;
+        widows: 100%;
+        color: white;
+          font-size: 32pt;
+          text-align: center;
+      }
+    }
+    .button{
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      button{
+        padding: 12px 20px 12px 20px;
+        border: 2px solid #fff;
+        box-sizing: inherit;
+        display: inline-block;
+        font-size: 13pt;
+        transition: all .5s;
+        background-color: transparent;
+        cursor: pointer;
+        color: white;
+        font-size: 16pt;
+        .fa-arrow-right{
+          padding-left: 15px;
+        }
+      }
+    }
+  }
 
-/**
- * Fix for Reactstrap
- **/
-.react-bs-table-sizePerPage-dropdown .dropdown-item a {
-  display: block;
-  color: #000;
-  text-decoration: none;
-}
-
-.react-bs-table-sizePerPage-dropdown button {
-  background: #fff;
-  color: #000;
 }
