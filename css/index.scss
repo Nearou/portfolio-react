@@ -7,93 +7,109 @@ $ionicons-version: "3.0.0-alpha.3" !default;
 @import "../node_modules/react-bootstrap-table/dist/react-bootstrap-table-all.min";
 @import "nojs-menus.scss";
 @import "layout.scss";
+@import "_swiper.scss";
+@import "skills.scss";
+.page {
+    display: flex;
+    position: absolute;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.5);
+    height: 100vh;
+    video {
+        position: absolute;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+        z-index: -1;
+        height: 100vh;
+    }
+}
 
-
-.page{
-  display: flex;
-  position: absolute;
-  width: 100vw;
-  background: rgba(0, 0, 0, 0.5);
-  height: 100vh;
-  video{
+.figure {
+    display: flex;
     position: absolute;
     width: 100%;
-    object-fit: cover;
-    object-position: center;
-    z-index: -1;
+    background: rgba(0, 0, 0, 0.5);
     height: 100vh;
-
-  }
-}
-.figure{
-  z-index: 999999;
-  display: flex;
-  position: absolute;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  height: 100vh;
-  align-items: center;
-  justify-content: center;
-
-  .contenu{
-    display: flex;
-    width: 70%;
-    flex-direction: column;
-    height: fit-content;
-    justify-content: center;
     align-items: center;
-    .row1{
-      display: flex;
-      width:100%;
-    .text{
-      display: flex;
-      width: 100%;
-      justify-content: center;
-      color: white;
-          font-size: 32pt;
-    line-height: 36pt;
-    text-align: center;
-      .name{
-       display:flex;
-  
-      color: #E31B6D;
-      }
-    }
-  }
-    .row2{
-      display: flex;
-      width: 100%;
-      justify-content: center;
-      margin-bottom: 20px;
-      .text{
-        justify-content: center;
+    justify-content: center;
+    .contenu {
         display: flex;
-        widows: 100%;
-        color: white;
-          font-size: 32pt;
-          text-align: center;
-      }
-    }
-    .button{
-      display: flex;
-      width: 100%;
-      justify-content: center;
-      button{
-        padding: 12px 20px 12px 20px;
-        border: 2px solid #fff;
-        box-sizing: inherit;
-        display: inline-block;
-        font-size: 13pt;
-        transition: all .5s;
-        background-color: transparent;
-        cursor: pointer;
-        color: white;
-        font-size: 16pt;
-        .fa-arrow-right{
-          padding-left: 15px;
+        width: 70%;
+        flex-direction: column;
+        height: fit-content;
+        justify-content: center;
+        align-items: center;
+        .row1 {
+            display: flex;
+            width: 100%;
+            .text {
+                display: flex;
+                width: 100%;
+                justify-content: center;
+                color: white;
+                font-size: 32pt;
+                line-height: 36pt;
+                text-align: center;
+                .name {
+                    display: flex;
+                    color: #E31B6D;
+                }
+            }
         }
-      }
+        .row2 {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            margin-bottom: 20px;
+            .text {
+                justify-content: center;
+                display: flex;
+                widows: 100%;
+                color: white;
+                font-size: 32pt;
+                text-align: center;
+            }
+        }
+        .button {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            button {
+                padding: 12px 20px 12px 20px;
+                border: 2px solid #fff;
+                box-sizing: inherit;
+                display: inline-block;
+                font-size: 13pt;
+                transition: all .5s;
+                background-color: transparent;
+                cursor: pointer;
+                color: white;
+                font-size: 16pt;
+                .fa-arrow-right {
+                    padding-left: 15px;
+                }
+            }
+        }
     }
-  }
+}
 
+.swiper-slide {
+    display: flex;
+    width: 100%;
+    .page3 {
+        display: flex;
+        position: absolute;
+        width: 100vw;
+        background: rgba(0, 0, 0, 0.6);
+        height: 100vh;
+        video {
+            position: absolute;
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+            z-index: -1;
+            height: 100vh;
+        }
+    }
 }

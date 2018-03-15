@@ -2,14 +2,13 @@ import React from 'react'
 import Router from 'next/router'
 import Head from 'next/head'
 import Link from 'next/link'
-import { Container, Row, Col, Nav, NavItem, Button, Form, NavLink, Collapse,
-         Navbar, NavbarToggler, NavbarBrand, Modal, ModalHeader, ModalBody,
-         ModalFooter, ListGroup, ListGroupItem } from 'reactstrap'
+
 import Signin from './signin'
 import { NextAuth } from 'next-auth/client'
 import Cookies from 'universal-cookie'
 import Package from '../package'
 import Styles from '../css/index.scss'
+import Swiper from 'swiper/dist/js/swiper.js'
 
 export default class extends React.Component {
 
@@ -26,6 +25,9 @@ export default class extends React.Component {
   
   constructor(props) {
     super(props)
+
+    skills : null;
+
     this.state = {
       navOpen: false,
       modal: false,
@@ -45,15 +47,26 @@ export default class extends React.Component {
           <style dangerouslySetInnerHTML={{__html: Styles}}/>
           <script src="https://cdn.polyfill.io/v2/polyfill.min.js"/>
           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
-        
+          <link rel="stylesheet" href="/nodes_modules/swiper/dist/css/swiper.min.css"/>
+            <script src="/nodes_modules/swiper/dist/js/swiper.min.js"></script>
         </Head>
         <div className="navbar">
           <div className="logo"></div>
           <div className="menu">
             <div className="buttons">
-              <div className="button"></div>
-              <div className="button"></div>
-              <div className="button"></div>
+              <div className="button">
+                <div className="title">Skills</div>
+
+                <div className="underline" style={(this.props.skills ? {display : 'flex'}: {display:'none'})}></div>
+              </div>
+              <div className="button">
+              <div className="title">Projects</div>
+                <div className="underline"></div>
+              </div>
+              <div className="button">
+              <div className="title">Contact</div>
+                <div className="underline"></div>
+              </div>
             </div>
           </div>
         </div>
