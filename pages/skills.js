@@ -47,22 +47,22 @@ export default class extends Page {
       
       <div className="rowContainer">
         <div className="card">
-          <div className="circle"></div>
+          <div className="circle"><i class="fa fa-tachometer"></i></div>
           <div className="title">Fast</div>
           <div className="text">Fast load times and lag free interaction, my highest priority.</div>
         </div>
         <div className="card">
-          <div className="circle"></div>
+          <div className="circle"><i class="fa fa-desktop"></i></div>
           <div className="title">Responsive</div>
           <div className="text">My layouts will work on any device, big or small.</div>
         </div>
         <div className="card">
-          <div className="circle"></div>
+          <div className="circle"><i class="fa fa-lightbulb"></i></div>
           <div className="title">Intuitive</div>
           <div className="text">Strong preference for easy to use, intuitive UX/UI.</div>
         </div>
         <div className="card">
-          <div className="circle"></div>
+          <div className="circle"><i class="fa fa-rocket"></i></div>
           <div className="title">Dynamic</div>
           <div className="text">Websites don't have to be static, I love making pages come to life.</div>
         </div>
@@ -89,8 +89,9 @@ Let's make something special.</div>
           <div className="bar">         
             <div className="fill html">
               <div className="tag">HTML</div>
+              <span className="percent">90%</span>
             </div>
-            <span className="percent">90%</span>
+            
           </div>
 
           <div className="bar">         

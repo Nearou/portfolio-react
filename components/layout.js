@@ -49,6 +49,7 @@ export default class extends React.Component {
           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
           <link rel="stylesheet" href="/nodes_modules/swiper/dist/css/swiper.min.css"/>
             <script src="/nodes_modules/swiper/dist/js/swiper.min.js"></script>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
         </Head>
         <div className="navbar">
           <div className="logo"></div>

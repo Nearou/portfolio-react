@@ -57,10 +57,24 @@
             .circle {
                 display: flex;
                 width: 100px;
-                background-color: #04C2C9;
+                //background-color: #04C2C9;
                 border-color: 2px solid #04C2C9;
                 height: 100px;
                 border-radius: 50%;
+                justify-content: center;
+                align-items: center;
+                .fa{
+                    display: flex;
+                    width: 100%;
+                    font-size: 4rem;
+                    color: white;
+                }
+                .far{
+                    display: flex;
+                    width: 100%;
+                    font-size: 4rem;
+                    color: white;
+                }
             }
             .title {
                 display: flex;
@@ -134,10 +148,12 @@
                 margin-bottom: 20px;
                 font-size: 11pt;
                 color: #666;
-                background-color: #eee;
+                background-color: transparent;
+                
                 .fill {
                     display: flex;
                     background-color: #00A1A7;
+                    
                     .tag {
                         display: flex;
                         width: 110px;
@@ -146,6 +162,15 @@
                         justify-content: center;
                         align-items: center;
                         font-weight: 500;
+                       
+                    }
+                    .percent {
+                        display: flex;
+                        
+                      justify-content: center;
+                        padding-right: 15px;
+                        align-items: center;
+                        right: 0;
                     }
                 }
                 .scss {
@@ -174,7 +199,7 @@
                 }
                 .percent {
                     display: flex;
-                    justify-content: flex-end;
+                    justify-content: flex-start;
                     padding-right: 15px;
                     align-items: center;
                     right: 0;
