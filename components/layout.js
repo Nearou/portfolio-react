@@ -65,21 +65,7 @@ export default class extends React.Component {
         <div className="navbar">
           <div className="logo"></div>
           <div className="menu">
-            <div className="buttons">
-              <div className="button">
-                <div className="title">Skills</div>
-
-                <div className="underline" style={(this.props.skills ? {display : 'flex'}: {display:'none'})}></div>
-              </div>
-              <div className="button">
-              <div className="title">Projects</div>
-                <div className="underline"></div>
-              </div>
-              <div className="button">
-              <div className="title">Contact</div>
-                <div className="underline"></div>
-              </div>
-            </div>
+           
           </div>
         </div>
         {this.props.children}
