@@ -49,7 +49,18 @@ export default class extends React.Component {
           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
           <link rel="stylesheet" href="/nodes_modules/swiper/dist/css/swiper.min.css"/>
             <script src="/nodes_modules/swiper/dist/js/swiper.min.js"></script>
+            <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"/>
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+            <link href="css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
+            <script src="https://unpkg.com/scrollreveal"></script>
+            <script src="js/wow.min.js"></script>
+            <link rel="stylesheet" href="css/animate.css"/>
+            <link rel="stylesheet" href="animate.min.css"/>
+            <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css"/>
+
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"/>
         </Head>
         <div className="navbar">
           <div className="logo"></div>
