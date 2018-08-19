@@ -5,6 +5,8 @@ import Page from '../components/page'
 import Layout from '../components/layout'
 import Swiper from 'swiper/dist/js/swiper.js'
 
+import $ from 'jquery'; 
+
 
 //import WOW from 'wowjs' 
 
@@ -33,7 +35,14 @@ export default class extends Page {
     //this.galleryTop.controller.control = galleryThumbs;
    // this.galleryThumbs.controller.control = galleryTop;
    
-   
+   window.addEventListener('scroll', this.handleScroll);
+}
+
+componentWillUnmount(){
+  window.removeEventListener('scroll', this.handleScroll);
+}
+handleScroll = () => {
+  console.log(window.scrollY);
 }
 
   render() {
@@ -43,11 +52,9 @@ export default class extends Page {
      
          
           <div className="page"> 
-        <video autoPlay muted loop poster="/static/images/Love-Coding.jpg" >
-           <source src={"/static/videos/Love-Coding.mp4"}>
-           </source>
-           </video>
+        
            </div>
+        
           <div className="figure">     
               <div className="contenu">
               <div className="row1">
@@ -64,9 +71,10 @@ export default class extends Page {
                 </div>             
               </div>     
            </div>
-
-          <div className="skills">
-      
+        
+          <div className="skills" id="skills">
+      <div className="title1">Skills</div>
+      <div className="underline"></div>
       <div className="rowContainer">
         <div className="card wow fadeInLeftBig"  data-wow-delay="1.5s">
           <div className="circle"><i class="fa fa-tachometer"></i></div>
@@ -167,20 +175,24 @@ export default class extends Page {
         </div>
       </div>
     </div>
-
+   
+   
     <div class="projects">
-        <div class="titleProjects">My Projects</div>
+        
         <div class="projectContainer">
-            <div class="project">
+      
+            <div class="project1">
+            <div className="description">
                 <div class="titleProject">Reims Esport</div>
-                <div class="link">https://www.reimsesport.fr</div>
-                <div class="descriptionProject">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
                 <div class="stacks">
                     <span class="stack">Angular 2</span>
                     <span class="stack">Node.js</span>
                     <span class="stack">MongoDB</span>
                     <span class="stack">Typescript</span>
+                </div>
+                <div class="descriptionProject">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+               
                 </div>
                 <div class="imagesProject">
                     <div class="swiper-container gallery-top">
@@ -196,22 +208,15 @@ export default class extends Page {
                         <div class="swiper-button-next swiper-button-white"></div>
                         <div class="swiper-button-prev swiper-button-white"></div>
                     </div>
-                    <div class="swiper-container gallery-thumbs">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide" style={{backgroundImage:'url(/static/images/ReimsEsportPC.png)'}}></div>
-                            <div class="swiper-slide"  style={{backgroundImage:'url(/static/images/ReimsEsportMobile.png)'}}></div>
-                            <div class="swiper-slide" style={{backgroundImage:'url(/static/images/ReimsEsportPC.png)'}}></div>
-                            <div class="swiper-slide"  style={{backgroundImage:'url(/static/images/ReimsEsportMobile.png)'}}></div>
-                            <div class="swiper-slide" style={{backgroundImage:'url(/static/images/ReimsEsportPC.png)'}}></div>
-                            <div class="swiper-slide"  style={{backgroundImage:'url(/static/images/ReimsEsportMobile.png)'}}></div>
-                        </div>
-                    </div>
+                   
 
 
                 </div>
             </div>
+          
 
-            <div class="project">
+
+            <div class="project2">
                 <div class="titleProject">Locavert</div>
                 <div class="link">https://www.reimsesport.fr</div>
                 <div class="descriptionProject">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
@@ -230,21 +235,13 @@ export default class extends Page {
                         <div class="swiper-button-next swiper-button-white"></div>
                         <div class="swiper-button-prev swiper-button-white"></div>
                     </div>
-                    <div class="swiper-container gallery-thumbs">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide" style={{backgroundImage:'url(../../assets/images/locavert.png)'}}></div>
-                            <div class="swiper-slide" style={{backgroundImage:'url(../../assets/images/locavert.png)'}}></div>
-                            <div class="swiper-slide" style={{backgroundImage:'url(../../assets/images/locavert.png)'}}></div>
-                            <div class="swiper-slide" style={{backgroundImage:'url(../../assets/images/locavert.png)'}}></div>
-                            <div class="swiper-slide" style={{backgroundImage:'url(../../assets/images/locavert.png)'}}></div>
-                            <div class="swiper-slide" style={{backgroundImage:'url(../../assets/images/locavert.png)'}}></div>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
+          
         </div>
     </div>
-                          
+        
       </Layout>
     )
   }

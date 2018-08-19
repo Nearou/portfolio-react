@@ -61,6 +61,12 @@ export default class extends React.Component {
 
   <link rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"/>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+  <script type="text/javascript" src=" https://cdnjs.cloudflare.com/ajax/libs/jquery-parallax/1.1.3/jquery-parallax.js"></script>
+  <script type="text/javascript" src=" https://cdnjs.cloudflare.com/ajax/libs/jquery-parallax/1.1.3/jquery-parallax-min.js"></script>
+
         </Head>
         <div className="navbar">
           <div className="logo"></div>
