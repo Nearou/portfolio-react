@@ -13,7 +13,7 @@
         "babel-plugin-wrap-in-js": "^1.1.1",
         "bootstrap": "^4.0.0",
         "connect-mongo": "^2.0.1",
-        "cross-env": "^5.1.4",
+        "cross-env": "^5.2.0",
         "dotenv": "^5.0.0",
         "express-session": "^1.15.5",
         "ionicons": "^3.0.0",
