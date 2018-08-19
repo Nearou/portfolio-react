@@ -52,7 +52,7 @@ handleScroll = () => {
      
          
           <div className="page"> 
-        
+          
            </div>
         
           <div className="figure">     
